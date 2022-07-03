@@ -1,104 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop project</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="header"> 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="logo">
-                        <a href="#">
-                            <img src="images/icon (3).png" alt="logo">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <nav>
-                        <ul class="menu">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">Payments</a></li>
-                            <li><a href="#">Shipping</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="row">
-                    <div class="col-md-9">
-                        <form action="" class="header-form-seach">
-                            <input class="header-form-input" type="text" placeholder="search">
-                            <button class="search-but"><img src="images/icon (4).png" alt="O"></button>
-                        </form>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="header-cart">
-                            <img src="images/icon (1).png" alt="0">
-                            <div class="products-count">0</div>
-                        </div>
-                    </div>
-                </div>
-                
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="logo">
+              <a href="#">
+                <img src="images/icon (3).png" alt="logo" />
+              </a>
             </div>
+          </div>
+          <div class="col-md-6">
+            <nav>
+              <ul class="menu">
+                <li class="menu-li"><a href="#" class="menu-a">Home</a></li>
+                <li class="menu-li">
+                    <a href="#" class="menu-a products" >Products <span class="material-symbols-outlined">
+                        <img src="images/expand_more_FILL0_wght400_GRAD0_opsz48.png" alt=""></span></a>
+                    
+                    <ul class="products-list" id="droplist">
+                        <li class="products-list-item"><a href="#" class="item-a">Lorem, ipsum dolor.</a></li>
+                        <li class="products-list-item"><a href="#" class="item-a">Lorem, ipsum.</a></li>
+                        <li class="products-list-item"><a href="#" class="item-a">Lorem, ipsum dolor.</a></li>
+                        <li class="products-list-item"><a href="#" class="item-a">Lorem.</a></li>
+                        <li class="products-list-item"><a href="#" class="item-a">Lorem, ipsum.</a></li>
+                    </ul>
+                </li>
+                <li class="menu-li"><a href="#" class="menu-a">Payments</a></li>
+                <li class="menu-li"><a href="#" class="menu-a">Shipping</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="row">
+            <div class="col-md-9">
+              <form action="" class="header-form-seach">
+                <input
+                  class="header-form-input"
+                  type="text"
+                  placeholder="search"/>
+                <button class="search-but">
+                  <img src="images/icon (4).png" alt="O" />
+                </button>
+              </form>
+            </div>
+            <div class="col-md-3">
+              <div class="header-cart">
+                <img src="images/icon (1).png" alt="0" />
+                <div class="products-count">0</div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
-    
-    
-    
-    
-        <main class="main">
-            <div class="container">
-                <div class="main-slider">
-                    <h2>
-                        #Slide 3
-                    </h2>
-                </div>
-                <div class="row">
-                    <div class="main-left">меню-лефт</div>
-                <div class="main-content">
-                    <a href="#" class="link">Home</a>
-                    <a href="#" class="link">Products</a>
-                    <a href="#" class="link">Laptops and Tablets</a>
-                    <h3>Laptops and Tablets</h3>
-            
-                    <div class="main-content-column">
-                        <div class="row">
-                            <div class="main-content-item">
-                                <div>
-                                    <a href="#" class="contant-item-back">
-                                        <img src="images/icon (17).png"  class="item-pic" alt="0">
-                                    </a>
-                                </div>
-                                <div class="main-content-text">
-                                    <h4>#Device name</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    <p> <span class="content-text-decoration">Type:</span>  Laptop</p>
-                                    <p> <span class="content-text-decoration">Screen size:</span>  7 inches</p>
-                                    <p> <span class="content-text-decoration">RAM: </span>  1 GB</p>
-                                    <p class="price">$1250 <sup>99</sup></p>
-                                    <button class="content-text-but"><span class="content-text-decoration">more details</span></button><br>
-                                    <button class="content-text-but"><span class="content-text-decoration">add to cart</span><img class="but-pic" src="images/icon (2).png" alt="0"></button>
-                                </div>
-                            </div>
-                            <div class="main-content-item">
-                                <a href="#" class="contant-item-back"><img src="images/icon (9).png" class="item-pic" alt="0"></a>
-                            </div>
-                            <div class="main-content-item">
-                                <a href="#" class="contant-item-back"><img src="images/icon (13).png"  class="item-pic"alt="0"></a>
-                            </div>
-                        
-                        </div>
-                    </div>
-                </div>
-                </div>
 
+    <main class="main">
+      <div class="container">
+        <div class="main-slider">
+          <h2>#Slide 3</h2>
+        </div>
+        <div class="row">
+          <div class="main-left">меню-лефт</div>
+          <div class="main-content">
+            <a href="#" class="link">Home</a>
+            <a href="#" class="link">Products</a>
+            <a href="#" class="link">Laptops and Tablets</a>
+            <h3>Laptops and Tablets</h3>
+
+            <div class="main-content-column">
+              <div class="row">
+                <div class="main-content-item">
+                  <div>
+                    <a href="#" class="contant-item-back">
+                      <img
+                        src="images/icon (17).png"
+                        class="item-pic"
+                        alt="0"
+                      />
+                    </a>
+                  </div>
+                  <div class="main-content-text">
+                    <h4>#Device name</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p>
+                      <span class="content-text-decoration">Type:</span> Laptop
+                    </p>
+                    <p>
+                      <span class="content-text-decoration">Screen size:</span>
+                      7 inches
+                    </p>
+                    <p>
+                      <span class="content-text-decoration">RAM: </span> 1 GB
+                    </p>
+                    <p class="price">$1250 <sup>99</sup></p>
+                    <button class="content-text-but">
+                      <span class="content-text-decoration"
+                        >more details</span
+                      ></button
+                    ><br />
+                    <button class="content-text-but">
+                      <span class="content-text-decoration">add to cart</span
+                      ><img class="but-pic" src="images/icon (2).png" alt="0" />
+                    </button>
+                  </div>
+                </div>
+                <div class="main-content-item">
+                  <a href="#" class="contant-item-back"
+                    ><img src="images/icon (9).png" class="item-pic" alt="0"
+                  /></a>
+                </div>
+                <div class="main-content-item">
+                  <a href="#" class="contant-item-back"
+                    ><img src="images/icon (13).png" class="item-pic" alt="0"
+                  /></a>
+                </div>
+              </div>
             </div>
-        </main>
-        <footer class="footer"><div class="container">футер</div></footer>
-    </body>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer"><div class="container">футер</div></footer>
+  </body>
 </html>

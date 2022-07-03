@@ -42,16 +42,16 @@ header{
     background-color: rgba(255, 255, 255, 0.75);
     padding: 25px 0;
 }
-.menu li{
+.menu-li{
     float: left;
     width: 25%;
     border-left: #2c71b8 solid 1px;
 }
-.menu li:last-child{
+.menu-li:last-child{
     border-right: #2c71b8 solid 1px;
 }
 
-.menu a{
+.menu-a{
     display: block;
     height: 50px;
     text-align: center;
@@ -60,9 +60,10 @@ header{
     color: #2c71b8 ;
     font-size: 21px;
 }
-.menu a:hover{
+.menu-a:hover{
     background-color: #2c71b8;
     color: white;
+    transition: all 0.3s ease;
 }
 .logo{
     margin-top: 7px;
@@ -74,9 +75,62 @@ header{
     height: 40px;
     position: absolute;
     top: 30px; 
-    background-color: rgba(255, 255, 255, 0.75);
-    background-image: url('images/patt.png'), repeat;
+    background: transparent;
 }
+
+/* List menu */
+.products-list{
+    position: absolute;
+    display: none;
+    left: -1px;
+}
+.products-list-item{
+    width: 200%;
+    height: 40px;
+}
+.menu-li{
+    position: relative;
+}
+.menu-li:hover #droplist{ 
+    display: block; 
+} 
+.menu-li:hover .products{
+    background: #2c71b8;
+    color: #fff;
+}
+.item-a{
+    display: block;
+    background-color: #2c71b8;
+    color: white;
+    font-size: 21px;
+    text-decoration: none;
+    line-height: 40px;
+    padding-left: 30px;
+    position: relative;
+}
+.item-a:hover{
+    background-color: #fff;
+    color: #2c71b8;
+    transition: all 0.3s ease;
+}
+.material-symbols-outlined{    
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48;
+      
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    color: #2c71b8;
+    top: 5px;
+}
+.material-symbols-outlined:hover{
+    color: white;
+}
+/* Search menu */
 .search-but{
     width: 30px;
     height: 30px;
@@ -87,15 +141,14 @@ header{
     top: 10px;
 }
 .search-but:hover{
-background-color: #2c71b8;
-opacity: 0.50;
+    background-color: #2c71b8;
+    opacity: 0.50;
 }
 
 .header-form-input:focus {
     outline: none;
     border-color: white;
     border-radius: 0%;
-    background-color: white;
 }
 
 ::placeholder {
@@ -105,8 +158,8 @@ opacity: 0.50;
 }
 .header-cart{
     float: left;
-    position: absolute;
-    top: 30px;
+    position: relative;
+    top: -25px;
     left: 88.5%;
     display: block;
     width: 40px;
@@ -114,11 +167,7 @@ opacity: 0.50;
     background-color: white;
     padding: 10px;
 }
-.header-cart:hover{
-    background-color: #2c71b8;
-    background-image: url('images/icon (2).png') no-repeat ;
-    opacity: 0.75;
-}
+
 .products-count{
     width: 20px;
     height: 20px;
